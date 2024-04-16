@@ -1,11 +1,11 @@
 package utilities;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -155,7 +155,7 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(numOfSec));
         wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
 
-        Assertions.assertEquals(expectedText, element.getText());
+        Assert.assertEquals(expectedText, element.getText());
     }
 
 

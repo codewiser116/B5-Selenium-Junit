@@ -1,13 +1,12 @@
 package tests;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import pages.CommonPage;
 import pages.LoginPage;
 import pages.PIMPage;
@@ -24,7 +23,7 @@ public class PIMTests {
     WebDriver driver = Driver.getDriver();
 
 
-    @BeforeEach
+    @BeforeMethod
     public void login(){
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         loginPage.login("Admin", "admin123");

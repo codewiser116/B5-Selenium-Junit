@@ -1,9 +1,9 @@
 package tests;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import pages.LoginPage;
 import utilities.Driver;
 
@@ -12,7 +12,7 @@ public class LoginTests {
     WebDriver driver;
     LoginPage loginPage;
 
-    @BeforeEach
+    @BeforeMethod
     public void before(){
         driver = Driver.getDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -24,17 +24,13 @@ public class LoginTests {
     @Test
     public void testSuccessfulLogin(){
         loginPage.login("Admin", "admin123");
-        Assertions.assertTrue(driver.getCurrentUrl().contains("dashboard"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
     }
 
     @Test
     public void testUnsuccessfulLogin(){
         loginPage.login("Admin", "fwefe");
-        Assertions.assertTrue(loginPage.invalidLoginMessage.isDisplayed());
+        Assert.assertTrue(loginPage.invalidLoginMessage.isDisplayed());
     }
-
-
-
-
 
 }
