@@ -9,7 +9,7 @@ import utilities.SeleniumUtils;
 
 public class AmazonTest {
 
-    @Test
+    @Test (groups = {"sanity"})
     public void amazonTest1(){
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.com/");
@@ -26,4 +26,19 @@ public class AmazonTest {
         System.out.println("This is test 3 of amazon");
         SeleniumUtils.waitForSeconds(3);
     }
+
+    @Test (groups = "loginTest")
+    public void login1(){
+        System.out.println("login amazon test 1");
+    }
+
+    @Test (groups = {"loginTest", "sanity"})
+    public void login2(){
+        System.out.println("login amazon test 2");
+    }
+
+    /*
+    create new loginTests.xml file which runs a group of login tests
+    from Google, Amazon and Etsy classes
+     */
 }

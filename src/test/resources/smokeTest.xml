@@ -3,11 +3,8 @@
 
     <test name="Smoke Test">
         <classes>
-            <class name="tests.TestNGIntroTests">
-                <methods>
-                    <include name="test2"></include>
-                </methods>
-            </class>
+            <class name="tests.TestNGIntroTests"></class>
+            <class name="tests.exampleWebsites.GoogleTest"></class>
         </classes>
     </test>
 
