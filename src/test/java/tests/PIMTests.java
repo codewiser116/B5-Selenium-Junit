@@ -3,23 +3,19 @@ package tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.CommonPage;
-import pages.LoginPage;
+import pages.CommonBasePage;
+import pages.LoginBasePage;
 import pages.PIMPage;
 import utilities.Driver;
 import utilities.SeleniumUtils;
 
-import java.time.Duration;
-
 public class PIMTests {
 
-    LoginPage loginPage = new LoginPage();
+    LoginBasePage loginPage = new LoginBasePage();
     PIMPage pimPage = new PIMPage();
-    CommonPage commonPage = new CommonPage();
+    CommonBasePage commonPage = new CommonBasePage();
     WebDriver driver = Driver.getDriver();
 
 

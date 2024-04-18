@@ -5,9 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class LoginPage {
+public class LoginBasePage extends BasePage {
 
-    public LoginPage(){
+    public LoginBasePage(){
+        super(Driver.getDriver());
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -23,11 +24,14 @@ public class LoginPage {
     @FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
     public WebElement invalidLoginMessage;
 
-
     public void login (String userName, String pwd){
         username.sendKeys(userName);
         password.sendKeys(pwd);
         loginButton.click();
     }
 
+    @Override
+    public void search(String... parameters) {
+
+    }
 }

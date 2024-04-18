@@ -5,9 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class CommonPage {
+public class CommonBasePage extends BasePage {
 
-    public CommonPage(){
+    public CommonBasePage(){
+        super(Driver.getDriver());
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -20,5 +21,11 @@ public class CommonPage {
     @FindBy (linkText = "Dashboard")
     public WebElement dashboard;
 
+    @FindBy(xpath = "//a[@href=\"/web/index.php/directory/viewDirectory\"]/span")
+    public  WebElement directory;
+
+    @Override
+    public void search(String... parameters) {
+    }
 
 }

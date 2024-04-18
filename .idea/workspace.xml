@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad547b7a-cdae-4f58-83b2-97e691c23a33" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestNGIntroTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestNGIntroTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/exampleWebsites/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/exampleWebsites/AmazonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/exampleWebsites/EtsyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/exampleWebsites/EtsyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/exampleWebsites/GoogleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/exampleWebsites/GoogleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/smokeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/smokeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CommonBasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginBasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PIMTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PIMTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +55,8 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/sanityTest.xml">
-    <configuration name="TestNGIntroTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HRMTest.test1">
+    <configuration name="HRMTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumJUnitTestFramework" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +65,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestNGIntroTests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HRMTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumJUnitTestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -72,39 +91,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/loginTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumJUnitTestFramework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/loginTest.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="testSuccessfulLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/parallelTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PIMTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumJUnitTestFramework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/parallelTest.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.PIMTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/sanityTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/directoreTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumJUnitTestFramework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/sanityTest.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/smokeTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumJUnitTestFramework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/smokeTest.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/directoreTest.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -114,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/sanityTest.xml" />
-        <item itemvalue="TestNG./Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/smokeTest.xml" />
-        <item itemvalue="TestNG.TestNGIntroTests" />
-        <item itemvalue="TestNG./Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/loginTest.xml" />
-        <item itemvalue="TestNG./Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/parallelTest.xml" />
+        <item itemvalue="TestNG.HRMTest.test1" />
+        <item itemvalue="TestNG./Users/codewiseacademy/Desktop/batch6/SeleniumTestNGTestFramework/src/test/resources/directoreTest.xml" />
+        <item itemvalue="TestNG.PIMTests" />
+        <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
+        <item itemvalue="TestNG.LoginTests" />
       </list>
     </recent_temporary>
   </component>
